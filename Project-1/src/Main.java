@@ -15,6 +15,6 @@ public class Main {
         System.out.println("Temp in C is "+ four.getTempC());
         System.out.println("Temp in F is "+ four.getTempF());
 
-        System.out.println(Temperature.compare(one, four));
+        Temperature.compare(one, four);
     }
 }
