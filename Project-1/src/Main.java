@@ -8,9 +8,13 @@ public class Main {
         Temperature four = new Temperature(10,'F');
 
         one.setValue(30);
+        one.setScale('F');
         four.setValue(34);
         four.setScale('F');
 
-        System.out.println(four.getValue()+", "+ four.getScale());
+        System.out.println("Temp in C is "+ four.getTempC());
+        System.out.println("Temp in F is "+ four.getTempF());
+
+        System.out.println(Temperature.compare(one, four));
     }
 }
